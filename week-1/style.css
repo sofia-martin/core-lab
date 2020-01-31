@@ -1,0 +1,26 @@
+.Header {
+    font-family: 'Belgrano', serif;
+
+}
+
+.details1 {
+    display: flex;
+    text-align: center
+}
+
+.h1{
+    display: flex;
+    text-align: center
+}
+
+.boldtext{
+    font-weight: bold
+}
+
+.bold2 {
+    font-weight: bold
+}
+.bold3 {
+    display: flex;
+    text-align: center
+}

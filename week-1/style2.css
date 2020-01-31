@@ -1,0 +1,11 @@
+.maintext1{
+    display: flex;
+    text-align: center;
+
+}
+
+.bold{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold
+}
