@@ -14,4 +14,34 @@
 }
 
 
+.upperrightbox{
+    position: absolute;
+    border: 1px solid green;
+    width: 300px;
+    height: 300px;
+    top: 13px;
+    right: 10px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    margin: 0;
+}
+
+.bottombox{
+    position:absolute;
+    border: 1px solid green;
+    width:300px;
+    height:300px;
+    bottom:13px;
+    right:25%;
+    left:50%;
+    margin-left:-200px;
+    padding-bottom: 10px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+
 
