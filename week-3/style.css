@@ -1,0 +1,195 @@
+body {
+    background-color: #f2dec4;
+    background-size: 100%;
+    color: white; 
+    margin: 0;
+ 
+  }
+
+  html, body, .bodycontainer  {
+    height: 100%
+  
+  }
+
+
+  
+.logocontainer{
+    border: #000000;
+    background-color: rgba(239, 233, 215, 0.6); 
+    border-width: .1px;
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+}
+
+path {
+stroke: #000000;
+fill: #000000;
+stroke-dasharray: 400px;
+opacity: 10;
+animation: animate 3s cubic-bezier(0,0.23,1,.1); 
+
+
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 200px;
+    }
+
+    30% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 400px;
+    }
+
+    90% {
+        fill: black;
+       
+    }
+
+    100% {
+        opacity: 10; 
+        fill: black;
+        stroke-dashoffset: 0;
+    }
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.buttons > .button1  {
+        background-color:rgba(239, 233, 215, 0.6); 
+        border:1px solid black;
+        display:inline-block;
+        cursor:pointer;
+        color:#000000;
+        font-family: 'Times New Roman', Times, serif; 
+        font-size: 17px;
+        padding:10px 60px;
+        margin: 50px;
+        text-decoration:none;
+    }
+
+
+ .buttons > .button2  {
+        background-color:rgba(239, 233, 215, 0.6); 
+        border:1px solid black;
+        display:inline-block;
+        cursor:pointer;
+        color:#000000;
+        font-family: 'Times New Roman', Times, serif; 
+        font-size: 17px;
+        padding:10px 60px;
+        margin: 50px;
+        text-decoration:none;
+    }
+
+
+    .buttons > .button3  {
+        background-color:rgba(239, 233, 215, 0.6); 
+        border:1px solid black;
+        display:inline-block;
+        cursor:pointer;
+        color:#000000;
+        font-family: 'Times New Roman', Times, serif; 
+        font-size: 17px;
+        padding:10px 60px;
+        margin: 50px;
+        text-decoration:none;
+    }
+
+    .button1:hover {
+        border: solid black;
+    }
+
+    .button2:hover {
+        border: solid black;
+    }
+
+    .button3:hover {
+        border: solid black;
+    }
+
+
+.textsection {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    height: 500px;
+    width: 500px;
+    border:1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+    padding: 20px;
+    background-color:rgba(239, 233, 215, 0.6); 
+    margin: 0 auto;
+
+
+}
+
+a:link {
+    text-decoration: none; color:black 
+  }
+  
+  a:visited {
+    text-decoration: none; color:black
+  }
+
+
+
+
+  .info {
+position: absolute;
+top: 279px;
+left: 580px;
+
+  }
+
+
+.spraypainted {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    animation: animate2 3s cubic-bezier(0,0.23,1,.1); 
+} 
+
+@keyframes animate2 {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 800px;
+    }
+
+    30% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 400px;
+    }
+
+    90% {
+        fill: black;
+       
+    }
+
+    100% {
+        opacity: 10; 
+        fill: black;
+        stroke-dashoffset: 0;
+    }
+}
