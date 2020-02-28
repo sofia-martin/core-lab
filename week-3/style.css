@@ -126,15 +126,15 @@ animation: animate 3s cubic-bezier(0,0.23,1,.1);
 .textsection {
     display: flex;
     flex-direction: row;
-    text-align: center;
-    justify-content: center;
+    text-align: left;
+    justify-content: left;
     align-content: center;
-    height: 500px;
+    height: 200px;
     width: 500px;
     border:1px solid black;
     font-family: 'Times New Roman', Times, serif;
     color: #000000;
-    padding: 20px;
+    padding: 30px;
     background-color:rgba(239, 233, 215, 0.6); 
     margin: 0 auto;
 
@@ -155,9 +155,27 @@ a:link {
   .info {
 position: absolute;
 top: 279px;
-left: 580px;
+left: 570px;
 
   }
+
+.email {
+position: absolute;
+top: 480px;
+width: 15%;
+left: 600px;
+
+
+}
+
+.number {
+    position: absolute;
+    top: 500px;
+    width: 7%;
+    left: 600px;
+    padding-top: 13px;
+    
+    }
 
 
 .spraypainted {
@@ -166,30 +184,6 @@ left: 580px;
     left: 0;
     top: 0;
     z-index: -1;
-    animation: animate2 3s cubic-bezier(0,0.23,1,.1); 
-} 
-
-@keyframes animate2 {
-    0% {
-        opacity: 0;
-        fill: none;
-        stroke-dashoffset: 800px;
-    }
-
-    30% {
-        opacity: 0;
-        fill: none;
-        stroke-dashoffset: 400px;
-    }
-
-    90% {
-        fill: black;
-       
-    }
-
-    100% {
-        opacity: 10; 
-        fill: black;
-        stroke-dashoffset: 0;
-    }
 }
+
+
