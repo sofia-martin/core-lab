@@ -1,0 +1,393 @@
+body {
+    background-color: #CCDEE6;
+    color: white; 
+    margin: 0;
+ 
+  }
+
+  html, body, .container{
+    height: 100%
+  
+  }
+
+.clouds{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+}
+
+.clouds:hover{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+}
+
+.cloud1{ 
+  position: absolute;
+  width: 500px;
+  height: auto;
+  left: 19%;
+  top: 0px;
+  z-index: 3;
+  animation-name: roll;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-delay: 20s;
+
+}
+@keyframes roll {
+  /* Basic move left and right*/
+    0% {transform: translateX(10px);}
+    20% {transform: translateX(-10px);}
+    100% {transform: translateX(1000px);}
+    0% {transform: translateY(100px);}
+  }
+
+
+
+/*.cloud1:hover{
+  animation: movingclouds 25s ease-in-out infinite;
+  animation-duration: 4s;
+}
+
+@keyframes movingclouds {
+  0% {
+      margin-left: 50%;
+  }
+  100% {
+      margin-left: -50%;
+  }
+}*/ 
+
+  .cloud2{
+    position: absolute;
+    width: 500px;
+    height: auto;
+    left: 55%;
+    top: 0px;
+    z-index: 3;
+    animation-name: roll2;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-delay: 20s;
+  
+  }
+  @keyframes roll2 {
+    /* Basic move left and right*/
+      0% {transform: translateX(-10px);}
+      20% {transform: translateX(10px);}
+      100% {transform: translateX(-1000px);}
+      0% {transform: translateY(-100px);}
+    }
+  
+
+
+  .cloud3{
+    
+    position: absolute; 
+    left: 53%;
+    width: 500px;
+    height: auto;
+    top: 70px;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+  
+  }
+
+.trees{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  align-content: flex-end;
+  margin-left: auto;
+}
+
+.tree1 {
+  position: absolute;
+  bottom: 2px;
+  animation: grow 1s linear 1;
+  animation-duration: 3.2s!important;
+  animation-fill-mode:forwards;
+  animation-delay: 15s;
+}
+
+@keyframes grow {
+	0% {
+		bottom:-40%;
+		width:1%;
+  }
+  100% {
+    
+		width:370px;
+	}
+} 
+
+.tree2 {
+  position: absolute;
+  bottom: 5px;
+  left: 2px;
+  animation: grow 1s linear 1;
+  animation-duration: 3.2s!important;
+  animation-fill-mode:forwards;
+  animation-delay: 15s;
+
+}
+@keyframes grow {
+	0% {
+		bottom:-40%;
+		width:1%;
+  }
+  100% {
+    
+		width:370px;
+	}
+} 
+
+.landscapebottom{
+  position: fixed;
+    bottom: 0;
+    width: 99%;
+    left: 4px;
+    height: 100px;
+
+}
+
+
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  z-index: 3;
+  
+}
+
+.clock {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  width: 500px;
+  height: 500px;
+  background: url(SVG/editedclockfinal.svg);
+}
+
+.clock:after {
+  position: absolute;
+  content: '';
+  background: white;
+  align-content: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+
+
+}
+
+
+
+#secondhand{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: 49px;
+  bottom:2px;
+  left: 248px;
+  transform: translateY(-80px);
+  bottom: 50%;
+  
+  
+  }
+
+  #minutehand.hands{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 42px;
+    bottom:2px;
+    left: 238px;
+    transform: translateY(-80px);
+    bottom: 50%;
+    
+    
+    }
+
+
+#hourhand{
+
+  position: absolute;
+  top: 0;
+  top: 43px;
+  bottom:2px;
+  left: 243px;
+  transform: translateY(-80px);
+  bottom: 50%;
+  
+  
+  }
+    
+  
+
+.raincontainer{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 150px;
+  left: 30%;
+  z-index: -1;
+  animation: flickerAnimation .5s;
+  animation-duration: 2s;
+
+}
+@keyframes fickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+
+
+.raincontainer2{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 150px;
+  left: 66%;
+  z-index: -1;
+
+
+}
+.waterdrop1{
+  animation: flicker1 3s linear;
+  animation-duration: 10s;
+  animation-delay: 25s;
+}
+
+@keyframes flicker1 {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		opacity: .99; } 
+	 20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+		text-shadow: none;
+	}
+}
+.waterdrop2{
+  animation: flicker2 3s linear;
+  animation-duration: 10s;
+  animation-delay: 26s;
+}
+
+@keyframes flicker2 {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		opacity: .99; } 
+	 20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+		text-shadow: none;
+	}
+}
+
+.waterdrop3{
+  animation: flicker3 3s linear;
+  animation-duration: 10s;
+  animation-delay: 27s;
+}
+
+@keyframes flicker3 {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		opacity: .99; } 
+	 20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+		text-shadow: none;
+	}
+}
+
+.waterdrop4{
+  animation: flicker4 3s linear;
+  animation-duration: 10s;
+  animation-delay: 28s;
+}
+
+@keyframes flicker4 {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		opacity: .99; } 
+	 20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+		text-shadow: none;
+	}
+}
+
+.waterdrop5{
+  animation: flicker5 3s linear;
+  animation-duration: 10s;
+  animation-delay: 29s;
+}
+
+@keyframes flicker5 {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		opacity: .99; } 
+	 20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+		text-shadow: none;
+	}
+}
+
+.waterdrop6{
+  animation: flicker6 3s linear;
+  animation-duration: 10s;
+  animation-delay: 30s;
+}
+
+@keyframes flicker6 {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		opacity: .99; } 
+	 20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+		text-shadow: none;
+	}
+}
+
+.waterdrop7{
+  animation: flicker7 3s linear;
+  animation-duration: 10s;
+  animation-delay: 31s;
+}
+
+@keyframes flicker7 {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		opacity: .99; } 
+	 20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+		text-shadow: none;
+	}
+}
+
+.waterdrop8{
+  animation: flicker6 3s linear;
+  animation-duration: 10s;
+  animation-delay: 32s;
+}
+
+@keyframes flicker8 {
+	0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+		opacity: .99; } 
+	 20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+		opacity: 0.4;
+		text-shadow: none;
+	}
+}
